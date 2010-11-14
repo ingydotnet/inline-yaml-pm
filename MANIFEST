@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/basic.t
+YAML.pm
+CPAN/MakeMaker.pm

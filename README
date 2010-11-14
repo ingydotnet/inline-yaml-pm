@@ -1,0 +1,45 @@
+Inline/YAML version 0.10
+========================
+
+Inline::YAML is a source filter that let's you put YAML documents
+directly in your Perl code:
+
+   use Inline::YAML;
+   use Data::Dumper;
+   print Dumper
+   --- &foo
+   foo: 42
+   bar: *foo
+   ...
+
+   my @arrays =
+   ---
+   - foo
+   - bar: 42
+   ---
+   - Hello
+   - world
+   ...
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+   YAML-0.35
+   Filter-Simple
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2002 Brian Ingerson
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself. 
