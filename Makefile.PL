@@ -1,6 +1,16 @@
-use CPAN::MakeMaker;
+use inc::Module::Install;
 
-$PREREQ_PM{YAML} = '0.35';
-$PREREQ_PM{Filter::Simple} = 0;
+name 'Inline-YAML';
 
-WriteMakefile;
+perl_version '5.005003';
+
+all_from 'lib/Inline/YAML.pm';
+manifest_skip;
+readme_from;
+ack_xxx;
+version_check;
+
+requires 'YAML' => '0.70';
+requires 'Filter::Simple';
+
+WriteAll;

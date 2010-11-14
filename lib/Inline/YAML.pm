@@ -1,14 +1,18 @@
 package Inline::YAML;
-$VERSION = '0.10';
+use 5.005003;
 use strict;
 use Filter::Simple;
-
 use YAML;
+
+$Inline::YAML::VERSION = '0.11';
+
 FILTER {
-    s/(\n\-\-\-.*?\n\.\.\.)/ YAML::Load(<<'...');$1/gs;
+    s/(\r?\n\-\-\-.*?\n\.\.\.\r?\n)/ YAML::Load(<<'...');$1/gs;
 };
 
 1;
+
+=encoding utf-8
 
 =head1 NAME
 
@@ -30,7 +34,7 @@ Inline::YAML - Specify YAML content directly in your Perl
       - Parse::RecDescent
       - Quantum::SuperPositions
     ---
-    name: Brian Ingerson
+    name: Ingy döt Net
     nickname: ingy
     hacks:
       - Inline
@@ -88,11 +92,11 @@ into:
 
 =head1 AUTHOR
 
-Brian Ingerson <INGY@cpan.org>
+Ingy döt Net <ingy@cpan.org>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2002. Brian Ingerson. All rights reserved.
+Copyright (c) 2002, 2010. Ingy döt Net.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

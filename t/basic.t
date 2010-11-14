@@ -1,5 +1,4 @@
-use Test;
-BEGIN { plan tests => 1 }
+use Test::More tests => 1;
 use Inline::YAML;
 
 my @hackers =
@@ -14,7 +13,7 @@ hacks:
   - Parse::RecDescent
   - Quantum::SuperPositions
 ---
-name: Brian Ingerson
+name: Ingy dot Net
 nickname: ingy
 hacks:
   - Inline
@@ -23,23 +22,23 @@ hacks:
 ...
 
 ok(YAML::Dump(@hackers), <<END);
---- #YAML:1.0
+---
 hacks:
   - patch
   - perl
 name: Larry Wall
 title: Fearless Leader
---- #YAML:1.0
+---
 hacks:
   - Parse::RecDescent
   - Quantum::SuperPositions
 name: Damian Conway
 title: Thunder from Down Under
---- #YAML:1.0
+---
 hacks:
   - Inline
   - YAML
   - Inline::YAML
-name: Brian Ingerson
+name: Ingy dot Net
 nickname: ingy
 END
