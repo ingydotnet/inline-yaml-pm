@@ -1,4 +1,11 @@
 ---
+version: 0.12
+date:    Mon Aug  4 07:51:15 PDT 2014
+changes:
+- Switch to Zilla::Dist
+- Switch to YAML::XS
+- Drop support < 5.8.1
+---
 version: 0.11
 date:    Sun Nov 14 03:23:18 PST 2010
 changes:

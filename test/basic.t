@@ -21,7 +21,7 @@ hacks:
   - Inline::YAML
 ...
 
-ok(YAML::Dump(@hackers), <<END);
+ok(YAML::XS::Dump(@hackers), <<END);
 ---
 hacks:
   - patch
