@@ -1,6 +1,6 @@
 use strict; use warnings;
 package Inline::YAML;
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 use Filter::Simple;
 use YAML::XS;

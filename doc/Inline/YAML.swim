@@ -3,6 +3,8 @@ Inline::YAML
 
 Specify YAML content directly in your Perl
 
+<badge travis coveralls ingydotnet/inline-yaml-pm>
+
 = Synopsis
 
   use Inline::YAML;

@@ -10,6 +10,10 @@ See http://github.com/ingydotnet/swim-pm#readme
 
 Inline::YAML - Specify YAML content directly in your Perl
 
+=for html
+<a href="https://travis-ci.org/ingydotnet/inline-yaml-pm"><img src="https://travis-ci.org/ingydotnet/inline-yaml-pm.png" alt="inline-yaml-pm"></a>
+<a href="https://coveralls.io/r/ingydotnet/inline-yaml-pm?branch=master"><img src="https://coveralls.io/repos/ingydotnet/inline-yaml-pm/badge.png" alt="inline-yaml-pm"></a>
+
 =head1 SYNOPSIS
 
     use Inline::YAML;

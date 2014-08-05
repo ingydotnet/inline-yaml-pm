@@ -1,4 +1,9 @@
 ---
+version: 0.13
+date:    Tue Aug  5 09:25:15 PDT 2014
+changes:
+- Add badges to doc
+---
 version: 0.12
 date:    Mon Aug  4 07:51:15 PDT 2014
 changes:
